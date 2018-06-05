@@ -1,0 +1,198 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+.menu_logo{	color: #999;}
+
+.img_premiere{
+	width: 16%;
+	height: 80%;
+	left: 50px;
+	float: left;
+}
+
+.text_premiere{	margin: 0 5% 0 18%;}
+
+.seat{
+	position: absolute;
+	background-color: #4eaaff;
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	color:#4eaaff;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.2s;
+	-webkit-transition:0.2s;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: HelveticaNeue, sans-serif;
+	padding-top: 3px;
+	border: 5px solid;
+	border-color: #4eaaff;
+	margin: 15px;
+}
+.seat:hover{
+	width: 35px;
+	height: 35px;
+	border-radius: 20px;
+	text-align: center;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	border-color: #4eaaff;
+	magrin: 14px;
+	background-color: white;
+	color: black;
+}
+
+.imgHall{
+	padding: 20px;
+	width: 100%;
+	height: 220px;
+}
+
+.seat_place{
+	margin: 30px 15% 10px 10%;
+}
+
+.seat::after{
+	width: 40px;
+}
+
+.hall{
+	height:600px;
+}
+
+.row{
+	position: absolute;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: HelveticaNeue, sans-serif;
+    color: rgb(128, 129, 132);
+}
+
+.custom-select{
+	background-color: rgb(31, 33, 40);
+	color: rgb(128, 129, 132);
+	border-color: rgb(31, 33, 40);
+}
+#toTop {
+width:50px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:20px;
+cursor:pointer;
+display:none;
+}
+
+.soldBillet{
+ background-color:	rgb(128, 129, 132);
+ width: 20px;
+ height:20px;
+ position: absolute;
+ border-radius: 20px;
+ cursor: pointer;
+ margin: 15px;
+ color: rgb(128, 129, 132);
+ font-size: 10px;
+}
+
+.topFilm{
+
+}
+
+.filmReyt{
+	display: flex;
+	float: right;
+}
+
+.headReyt{
+	width: 100%;
+	background-color: #4eaaff;
+}
+
+.numFilm{
+	width: 150px;
+}
+.nameFilm{
+	width: 400px;
+}
+.reyt{
+	width: 200px;
+}

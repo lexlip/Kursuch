@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>QCinema</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/buyBillet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header class="menu">
+		<nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <div class="py-2 menu_logo">
+          QCinema
+        </div>
+        <a class="py-2 d-none d-md-inline-block" href="#">Афиша</a>
+        <a class="py-2 d-none d-md-inline-block" href="topFilm.html">Топ фильмов</a>
+      </div>
+    </nav>
+	</header>
+
+	<main>
+		<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
+			<img class="img_premiere" src="img/844118.jpg" alt="Легенда о коловрате">
+      <div class="text_premiere">
+      	<h1 class="display-4 font-weight-normal">Легенда о Коловрате</h1>
+      	<p class="lead font-weight-normal">Режиссер: Джаник Файзиев, Иван Шурховецкий</p>
+      	<p class="lead font-weight-normal">Страна: Россия</p>
+      	<p class="lead font-weight-normal">Жанр: история, боевик, фэнтези</p>
+        <p class="lead font-weight-normal">XIII век. Русь раздроблена и вот-вот падет на колени перед ханом Золотой Орды Батыем. Испепеляя города и заливая русские земли кровью, захватчики не встречают серьезного сопротивления, и лишь один воин бросает им вызов. Молодой рязанский витязь Евпатий Коловрат возглавляет отряд смельчаков, чтобы отомстить за свою любовь и за свою родину. Его отвага поразит даже Батыя, а его имя навсегда останется в памяти народа. Воин, ставший легендой. Подвиг, сохранившийся в веках.</p>
+        <a class="btn btn-outline-secondary" href="#film1">Купить билет<br>Цена: 250р</a>
+      </div>
+    </div>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
+    	<img class="img_premiere" src="img/618287.jpg" alt="Легенда о коловрате">
+    	<div class="text_premiere">
+    		<h1 class="display-4 font-weight-normal">Иностранец</h1>
+    		<p class="lead font-weight-normal">Режиссер: Мартин Кэмпбелл</p>
+    		<p class="lead font-weight-normal">Страна: Великобритания, Китай, США</p>
+    		<p class="lead font-weight-normal">Жанр: боевик, триллер, драма, криминал, детектив</p>
+    		<p class="lead font-weight-normal">Бывший спецагент, ветеран вьетнамской войны Цюань давно сложил оружие и завел мирную жизнь. Но после того, как в теракте прямо на глазах погибает его дочь-подросток, видя, что власти не спешат разыскивать преступников, Цюань сам начинает поиск убийцы. Он пойдет на все, чтобы совершить праведное возмездие…</p>
+    		<a class="btn btn-outline-secondary" href="#">Купить билеты</a>
+    	</div>
+    </div>
+  <div class="dm-overlay" id="film1">
+    <div class="dm-table">
+      <div class="dm-cell">
+        <div class="dm-modal">
+          <a href="#close" class="close"></a>
+          <div class="selects">
+            <select onclick="selects()" id="clickme" class="custom-select">
+              <option selected value="0">Выберите дату</option>
+              <option value="1">05.25.8</option>
+              <option value="2">06.25.8</option>
+              <option value="3">07.25.8</option>
+              <option value="4">08.25.8</option>
+            </select> 
+            <select id="date1" class="custom-select" style="display: none">
+              <option selected>Выберите время сеанса</option>
+              <option value="1">09:40</option>
+              <option value="2">20:20</option>
+              <option value="3">15:15</option>
+            </select>
+            <select id="date2" class="custom-select" style="display: none">
+              <option selected>Выберите время сеанса</option>
+              <option value="1">10:40</option>
+              <option value="2">20:20</option>
+              <option value="3">15:15</option>
+            </select>
+            <select id="date3" class="custom-select" style="display: none">
+              <option selected>Выберите время сеанса</option>
+              <option value="1">11:40</option>
+              <option value="2">20:20</option>
+              <option value="3">15:15</option>
+            </select>
+            <select id="date4" class="custom-select" style="display: none">
+              <option selected>Выберите время сеанса</option>
+              <option value="1">12:40</option>
+              <option value="2">20:20</option>
+              <option value="3">15:15</option>
+            </select>
+
+          </div>
+          <div class="hall">
+          	<img class="imgHall" src="img/844118_1.jpg">
+          <div class="seat_place">
+          	<div class="row" style="transform: translateX(13px) translateY(15px);">1</div>
+          	<div id="m1" class="seat" style="transform: translateX(65px) translateY(0px); ">1</div>
+          	<div id="m2" class="seat" style="transform: translateX(120px) translateY(0px);">2</div>
+          	<div id="m3" class="seat" style="transform: translateX(175px) translateY(0px);">3</div>
+          	<div id="m4" class="seat" style="transform: translateX(230px) translateY(0px);">4</div>
+          	<div id="m5" class="seat" style="transform: translateX(285px) translateY(0px);">5</div>
+          	<div id="m6" class="seat" style="transform: translateX(340px) translateY(0px);">6</div>
+          	<div id="m7" class="seat" style="transform: translateX(395px) translateY(0px);">7</div>
+          	<div id="m8" class="seat" style="transform: translateX(450px) translateY(0px);">8</div>
+          	<div class="row" style="transform: translateX(570px) translateY(15px);">1</div>
+          	<div class="row" style="transform: translateX(13px) translateY(65px);">2</div>
+          	<div id="m9" class="seat" style="transform:  translateX(65px) translateY(50px);">9</div>
+          	<div id="m10" class="seat" style="transform: translateX(120px) translateY(50px);">10</div>
+          	<div id="m11" class="seat" style="transform: translateX(175px) translateY(50px);">11</div>
+          	<div id="m12" class="seat" style="transform: translateX(230px) translateY(50px);">12</div>
+          	<div id="m13" class="seat" style="transform: translateX(285px) translateY(50px);">13</div>
+          	<div id="m14" class="soldBillet" style="transform: translateX(345px) translateY(55px);">14</div>
+          	<div id="m15" class="seat" style="transform: translateX(395px) translateY(50px);">15</div>
+          	<div id="m16" class="seat" style="transform: translateX(450px) translateY(50px);">16</div>
+          	<div class="row" style="transform: translateX(570px) translateY(65px);">2</div>
+          	<div class="row" style="transform: translateX(13px) translateY(115px);">3</div>
+          	<div id="m17" class="seat" style="transform:  translateX(65px) translateY(100px);">17</div>
+          	<div id="m18" class="seat" style="transform: translateX(120px) translateY(100px);">18</div>
+          	<div id="m19" class="seat" style="transform: translateX(175px) translateY(100px);">19</div>
+          	<div id="m20" class="seat" style="transform: translateX(230px) translateY(100px);">20</div>
+          	<div id="m21" class="seat" style="transform: translateX(285px) translateY(100px);">21</div>
+          	<div id="m22" class="seat" style="transform: translateX(340px) translateY(100px);">22</div>
+          	<div id="m23" class="seat" style="transform: translateX(395px) translateY(100px);">23</div>
+          	<div id="m24" class="seat" style="transform: translateX(450px) translateY(100px);">24</div>
+          	<div class="row" style="transform: translateX(570px) translateY(115px);">3</div>
+          	<div class="row" style="transform: translateX(13px) translateY(165px);">4</div>
+          	<div id="m25" class="seat" style="transform:  translateX(65px) translateY(150px);">25</div>
+          	<div id="m26" class="seat" style="transform: translateX(120px) translateY(150px);">26</div>
+          	<div id="m27" class="seat" style="transform: translateX(175px) translateY(150px);">27</div>
+          	<div id="m28" class="seat" style="transform: translateX(230px) translateY(150px);">28</div>
+          	<div id="m29" class="seat" style="transform: translateX(285px) translateY(150px);">29</div>
+          	<div id="m30" class="seat" style="transform: translateX(340px) translateY(150px);">30</div>
+          	<div id="m31" class="seat" style="transform: translateX(395px) translateY(150px);">31</div>
+          	<div id="m32" class="seat" style="transform: translateX(450px) translateY(150px);">32</div>
+          	<div class="row" style="transform: translateX(570px) translateY(165px);">4</div>
+          	<div class="row" style="transform: translateX(13px) translateY(215px);">5</div>
+          	<div id="m33" class="seat" style="transform:  translateX(65px) translateY(200px);">33</div>
+          	<div id="m34" class="seat" style="transform: translateX(120px) translateY(200px);">34</div>
+          	<div id="m35" class="seat" style="transform: translateX(175px) translateY(200px);">35</div>
+          	<div id="m36" class="seat" style="transform: translateX(230px) translateY(200px);">36</div>
+          	<div id="m37" class="seat" style="transform: translateX(285px) translateY(200px);">37</div>
+          	<div id="m38" class="seat" style="transform: translateX(340px) translateY(200px);">38</div>
+          	<div id="m39" class="seat" style="transform: translateX(395px) translateY(200px);">39</div>
+          	<div id="m40" class="seat" style="transform: translateX(450px) translateY(200px);">40</div>
+          	<div class="row" style="transform: translateX(570px) translateY(215px);">5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	</main>
+
+	<footer>
+		
+	</footer>
+<div ID = "toTop" > <img width="50px" height="50px" src="img/icons/iconTop.png"> </div>
+</body>
+	<script type="text/javascript">
+	function selects(){
+	var id = document.getElementById("clickme");
+	var options_value;
+		for(var i = 0; i < 5;i++){
+			if(id.options[i].value != 0)
+			{
+						document.getElementById("date" + id.options[i].value).style.display = 'none';
+			}
+	}
+	for(var i = 0; i < 5;i++){
+		console.log(id.options[i].value);
+		if(id.options[i].selected == true && id.options[i].value != 0)
+		{
+			document.getElementById("date" + id.options[i].value).style.display = "block";
+		}
+	}
+
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/scrolltop.js"></script>
+</html>
